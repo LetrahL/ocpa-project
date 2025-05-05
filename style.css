@@ -212,49 +212,60 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+
   .main-nav li {
     margin-bottom: 10px;
   }
+
   .site-header h1 {
     font-size: 2rem;
   }
+
   .site-header p {
     font-size: 1rem;
   }
-  .card img, 
-  .local-images img,{
 
+  .card img,
+  .local-images img,
+  .types-images img,
+  .jerry-gif img,
+  .motivation img {
+    width: 100%;
+    height: auto;
   }
-  .types-images img,{
 
+  .types-images,
+  .local-images {
+    flex-direction: column;
+    gap: 15px;
   }
-  .jerry-gif img,{
-    width: 70%; /* Make images take full width of their container */
-    height: auto; /* Maintain aspect ratio */
-  }
-  .motivation img,{
 
-  }
   .grid-item img {
-    width: 35%; /* Make images take full width of their container */
-    height: auto; /* Maintain aspect ratio */
+    width: 80px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-nav {
+    width: 90%;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
   }
 
-  .local-images,{
+  .site-header h1 {
+    font-size: 1.5rem;
+  }
 
+  .site-header p {
+    font-size: 0.9rem;
   }
-  .types-images {
-    flex-direction: column; /* Stack images vertically */
-    gap: 15px; /* Add spacing between images */
-  }
-    
+}
 
-  .local-images,
-  .types-images {
-    flex-direction: column; /* Stack images vertically */
-    gap: 15px; /* Add spacing between images */
-  }
-  }
+  
   
 
 .grid-container {
